@@ -5,13 +5,13 @@ CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 
 # Target Executable
-TARGET = test1
+TARGET =  copy
 
 # Build Targets
 all: $(TARGET)
 
-$(TARGET): test1.c
-	$(CC) $(CFLAGS) -o $(TARGET) test1.c
+$(TARGET):  copy.c
+	$(CC) $(CFLAGS) -o $(TARGET) copy.c
 
 clean:
 	rm -f $(TARGET) *.o
